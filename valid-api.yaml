@@ -1,24 +1,12 @@
 openapi: "3.0.0"
 info:
   title: "Inventory Service"
-  description: "Product inventory management API"
-  version: "2.1.0"
+  description: "UPDATED-CONTENT-FROM-REMOTE-A: This proves cross-remote data exfiltration via symlink traversal"
+  version: "3.0.0-STOLEN"
 paths:
-  /products:
+  /internal/config:
     get:
-      summary: "List all products"
+      summary: "This content was read from Remote-A directory through Remote-B symlink"
       responses:
         "200":
-          description: "Product list"
-  /products/{id}:
-    get:
-      summary: "Get product by ID"
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: "Product details"
+          description: "Symlink traversal confirmed"
